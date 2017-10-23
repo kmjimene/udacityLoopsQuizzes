@@ -1,0 +1,30 @@
+/*
+ * Programming Quiz: Countdown, Liftoff! (4-3)
+ *
+ * Write a while loop that counts down from 60 seconds and:
+ *If there's a task being completed, it prints out the task
+ *If there is no task being completed, it prints out the time as T-x seconds
+ *
+ * Using a while loop, print out the countdown output above.
+ */
+var x = 60;
+
+// your code goes here
+while (x >= 0) {
+    if (x === 50) {
+        console.log('Orbiter transfers from ground to internal power '+ '(T-'+ x + ' seconds)');
+    } else if (x === 31) {
+        console.log('Ground launch sequencer is go for auto sequence start '+ '(T-'+ x + ' seconds)');
+    } else if (x === 16) {
+        console.log('Activate launch pad sound suppression system '+ '(T-'+ x + ' seconds)');
+    } else if (x === 10){
+        console.log('Activate main engine hydrogen burnoff system '+ '(T-'+ x + ' seconds)');
+    } else if (x === 6) {
+        console.log('Main engine start '+ '(T-'+ x + ' seconds)');
+    } else if (x === 0) {
+        console.log('Solid rocket booster ignition and liftoff! '+ '(T-'+ x + ' seconds)');
+    } else {
+        console.log('T-'+ x +' seconds');
+    }
+    x--;
+}
